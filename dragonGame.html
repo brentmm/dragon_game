@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	alert('Hello I am Computo, and welcome to Brents fabulous, wonderful, amazing Dragon Game!!');
+	var userEntry 
+	var randomNumber
+	var refresh
+
+	userEntry = prompt('Ready to begin?')
+
+		if(userEntry === "yes"){
+		
+			alert("You are in a land full of dragons. In front of you, you see two caves. In one cave, the dragon is friendly and will share his treasure with you. The other dragon is greedy and hungry, and will eat you on sight.")
+			 randomNumber = Math.ceil(Math.random() * 2)
+			alert(randomNumber)
+
+			while(userEntry !== "1" && userEntry !== "2"){
+			userEntry = prompt("Which cave will you enter? 1 or 2?")
+			}
+			
+
+			alert("You approach the cave...")
+			alert("It is dark and spooky...")
+				
+				 
+				if(parseInt(userEntry) === randomNumber){ 
+					alert('A large dragon jumps out in front of you! He opens his jaws and... Gives you a treasure')
+				} 
+				else {
+					alert('A large dragon jumps out in front of you! He opens his jaws and... Gobbles you down in one bite!')
+				}
+					
+					refresh = confirm("Would you like to play again?")
+	
+					if (refresh === true) {
+						location.reload(true);
+					} else {	
+						alert("Thank you for playing.");
+					}
+
+		
+		} 
+		 else {
+			refresh = confirm("Would you like to play again?")
+	
+					if (refresh === true) {
+						location.reload(true);
+					} else {	
+						alert("Thank you for playing.");
+					}
+		}
+
+
+</script>
+</body>
+</html> 
